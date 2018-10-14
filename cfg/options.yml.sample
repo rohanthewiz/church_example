@@ -5,7 +5,7 @@
 
 defaults: &defaults
   theme: cobalt
-  banner_inner_html: '<h1>Your Church or Business</h1><h3>We aim to serve you</h3><img class="logo-right" src="/assets/images/bible_white_bkgnd.png"'
+  banner_inner_html: '<h1>Your Church or Business</h1><h3>We aim to serve you</h3><img class="logo-right" src="/assets/images/bible_white_bkgnd.pn">'
   copyright_owner: 'My Company'
   server:
     port: 4000

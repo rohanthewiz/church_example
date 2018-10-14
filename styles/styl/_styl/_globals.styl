@@ -1,21 +1,13 @@
 /* Background pattern from Toptal Subtle Patterns */
 
 // Base Colors
-color-beige = #f2f3ec
-color-practically-white = #fcfafa
-color-blue = #05668d
-color-lightblue = #93c0d6
-color-blue-bright = #3d88c9
-color-paleblue = #225c59
-color-dark-cyan = #1c5f68
-color-palecyan = #7d90a0
-color-green = #cde6ce
-color-deep-green = #73f071
-color-lightgreen = lightgreen
-color-palegreen = #167e3a // #73a785
 color-white = #fdfdfd
 color-almost-white = #fafaf7
 color-off-white = #f8f8f8
+color-dull-white = #dcdbdb
+color-beige = #f2f3ec
+color-practically-white = #fcfafa
+
 color-gray = #d8dad3
 color-light-gray = #eaeaea
 color-dark-gray = #303030
@@ -25,26 +17,45 @@ color-black = #181818
 color-dark-accent = #152035
 color-form-back = #f3f6ed
 color-light-gray-border-color = #e9e9e9
-color-yellow = #f2f5c9
 color-super-light-gray = #f0f0f0
 color-light-gray-shadow-color = rgba(244,244,246,0.6)
+
+color-blue = #05668d
+color-lightblue = #93c0d6
+color-blue-bright = #3d88c9
+color-paleblue = #225c59
+color-cema-blue = #6794c3
+color-dark-cyan = #1c5f68
+color-palecyan = #7d90a0
+
+color-green = #cde6ce
+color-light-green = lightgreen
+color-light-pale-green = #b0e3af
+color-medium-green = #aceaa1
+color-deep-green = #73f071
+color-dark-deep-green = #04960b
+color-dark-green = #167e3a
+
+color-yellow = #f2f5c9
 
 // THEMES
 
 // Cobalt
 theme-cobalt-body-bgcolor = color-white
 theme-cobalt-a-color = color-paleblue
-theme-cobalt-banner-color = color-dark-gray
+theme-cobalt-banner-color = color-almost-white //color-dark-gray
+theme-cobalt-banner-bgcolor = color-cema-blue
+theme-cobalt-banner-bg-gradient = color-cema-blue
 theme-cobalt-nav-bgcolor = color-blue
 theme-cobalt-nav-a-color = color-beige
 theme-cobalt-nav-a-hover-color = color-dark
-theme-cobalt-nav-a-hover-bgcolor = color-deep-green
-theme-cobalt-menuitem-hilite-background = linear-gradient(to right, color-deep-green 0%, rgb(162, 244, 147) 65%, rgba(194,243,178,0.85) 100%)
+theme-cobalt-nav-a-hover-bgcolor = color-light-pale-green
+theme-cobalt-menuitem-hilite-background = linear-gradient(to right, #a9f1a8 0%, #abe5a1 65%, #cdfbc2 100%)
 theme-cobalt-pagetitle-color = color-dark-accent
 theme-cobalt-maincontent-bgcolor = color-white
 
-theme-cobalt-module-heading-color = color-palegreen
-theme-cobalt-module-title-background = linear-gradient(to right, #47ee2c 0%, #c9eac9 68%, #fdfdfd 100%) //linear-gradient(to right, #cbf6c4 0%, #edf8ed 30%, #fdfdfd 100%);
+theme-cobalt-module-heading-color = color-dark-green
+theme-cobalt-module-title-background = linear-gradient(to right, color-medium-green 0%, #daf1da 68%, #fdfdfd 100%)
 theme-cobalt-module-body-bgcolor = color-white
 theme-cobalt-module-a-color = color-black
 theme-cobalt-carousel-bgcolor = color-practically-white
@@ -63,7 +74,7 @@ theme-cobalt-footer-a-color = color-light-black
 theme-cobalt-add-button-color= color-white
 
 // Common
-theme-common-flash-bgcolor = color-lightgreen
+theme-common-flash-bgcolor = color-light-green
 theme-common-light-border = 1px solid color-super-light-gray
 theme-common-medium-border = 1px solid color-gray
 theme-common-box-shadow-right-bottom = 1px 1px 5px 3px color-light-gray-shadow-color

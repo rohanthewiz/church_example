@@ -14,7 +14,7 @@ mid_layout()
   section-min-height = 440px
   section-min-width = 180px
   section-max-width = 400px
-  mid-diff = banner-height + menu-height + footer-height
+  mid-diff = banner-height + menu-height + footer-height + 2px
 
   #mid
     //position: absolute
@@ -35,13 +35,13 @@ mid_layout()
     //background-color: #fdfdfd;
     //overflow-y: auto;
     margin-left: auto;
-    max-width: 1400px;
+    max-width: 1700px;
     margin-right: auto;
 
   #main  // main content takes the hit for gutter so it's width is reduced by gutter * 2
     clearfix()
     min-height: section-min-height
-    height: calc(100% - 1.4rem)
+    height: "calc(100vh - %s)" % (mid-diff + 2px) //calc(100% - 0.4rem)
     margin-top: 0
     margin-bottom: 0.1rem
     padding: 0.1rem section-lateral-padding
@@ -54,20 +54,20 @@ mid_layout()
       float: left
       margin-left: 4px
       width: "calc(%s - 8px)" % layout-3col-main-width
-      //box-shadow: theme-common-box-shadow-right-bottom
+    //box-shadow: theme-common-box-shadow-right-bottom
     //margin-right: 4px
     &.layout-left-main  // left and main columns only. split - 35%:5px:65%-5px
       float: right
       margin-right: 0
       width: "calc(%s - 5px)" % layout-2col-main-width
-      //box-shadow: theme-common-box-shadow-left-bottom
-      //margin-left: 5px
+    //box-shadow: theme-common-box-shadow-left-bottom
+    //margin-left: 5px
     &.layout-main-right  // main and right columns only. split - 65%-5px:35%
       float: left
       width: "calc(%s - 5px)" % layout-2col-main-width
       margin-left: 0
-      //box-shadow: theme-common-box-shadow-right-bottom
-      //margin-right: 5px
+    //box-shadow: theme-common-box-shadow-right-bottom
+    //margin-right: 5px
     &.layout-main  // main column only
       width: percentage(layout-1col-main-width)
       margin-left: auto

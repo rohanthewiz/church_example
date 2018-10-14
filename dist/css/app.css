@@ -489,12 +489,58 @@ body #banner {
   width: 100%;
   font-weight: bold;
   text-align: center;
-  background: #fdfdfd url("/assets/images/logo.png") no-repeat scroll 0 50%;
+  background: -moz-linear-gradient(270deg, #b8d3f2 0%, #3d5e85 100%); /* ff3.6+ */
+  background: -webkit-linear-gradient(270deg, #b8d3f2 0%, #3d5e85 100%); /* safari5.1+,chrome10+ */
+  background: -ms-linear-gradient(270deg, #b8d3f2 0%, #3d5e85 100%); /* ie10+ */
+  background: linear-gradient(180deg, #b8d3f2 0%, #3d5e85 100%);
 }
 body #banner.theme-cobalt {
-  color: #303030;
+  color: #fafaf7;
 }
-body #banner::after {
+body #banner #banner-wrapper {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 130px;
+}
+body #banner #banner-wrapper .banner-title-wrapper {
+  display: inline-block;
+  padding: 0.1rem 1.4rem 4px 0.1rem;
+}
+body #banner #banner-wrapper .banner-title-wrapper h1 {
+  font-family: sourcesanspro-bold, sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 0.1rem;
+  margin-top: 0.4rem;
+}
+body #banner #banner-wrapper .banner-title-wrapper h3 {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 0.2rem;
+  color: #dcdbdb;
+}
+body #banner #banner-wrapper .logo-dove {
+  height: 64px;
+  outline: none;
+  border: none;
+  margin-bottom: 0.2rem;
+}
+body #banner #logo-extension {
+  height: 22px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 0.2rem;
+  font-size: 1rem;
+  text-align: right;
+  color: #fff;
+  background: -moz-linear-gradient(270deg, #c7e6f0 0%, #8ba8cc 20%, #8ba8cc 80%, #005171 100%); /* ff3.6+ */
+  background: -webkit-linear-gradient(270deg, #c7e6f0 0%, #8ba8cc 20%, #8ba8cc 80%, #005171 100%); /* safari5.1+,chrome10+ */
+  background: -ms-linear-gradient(270deg, #c7e6f0 0%, #8ba8cc 20%, #8ba8cc 80%, #005171 100%); /* ie10+ */
+  background: linear-gradient(180deg, #c7e6f0 0%, #8ba8cc 20%, #8ba8cc 80%, #005171 100%); /* w3c */
+}
+body #banner #logo-extension::after {
   content: "";
   z-index: -1;
   position: absolute;
@@ -506,38 +552,23 @@ body #banner::after {
   -moz-box-shadow: 0 1px 2px rgba(91,105,113,0.7);
   box-shadow: 0 1px 2px rgba(91,105,113,0.7);
 }
-body #banner .logo-right {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: -1;
+body #banner #logo-extension .fb-icon {
+  height: 1.1rem;
+  float: right;
+  margin-top: -0.1rem;
+  margin-left: 0;
+  margin-right: 0.6rem;
+  padding-bottom: 0;
+  padding-top: 0;
 }
-body #banner #logo-top-line {
-  position: absolute;
-  width: 100%;
-  background-color: #000;
-  left: 0;
-  bottom: 21px;
-  color: #000;
-  height: 2px;
+body #banner #logo-extension a:link,
+body #banner #logo-extension a:visited {
+  margin-left: 0.8rem;
+  color: #fff;
+  text-decoration: none;
 }
-body #banner #logo-bottom-line {
-  position: absolute;
-  width: 100%;
-  background-color: #000;
-  left: 0;
-  bottom: 0;
-  color: #000;
-  height: 2px;
-}
-body #banner h1 {
-  font-family: quintessential, Times, "Times New Roman", serif;
-  font-size: 1.6rem;
-}
-body #banner h3 {
-  font-weight: normal;
-  font-size: 1.1rem;
-  color: #8a8a8a;
+body #banner #logo-extension a:hover {
+  color: #04960b;
 }
 body #header {
   position: fixed;
@@ -556,7 +587,7 @@ body #header.theme-cobalt nav a {
 }
 body #header.theme-cobalt nav a:hover {
   color: #202020;
-  background: linear-gradient(to right, #73f071 0%, #a2f493 65%, rgba(194,243,178,0.85) 100%);
+  background: linear-gradient(to right, #a9f1a8 0%, #abe5a1 65%, #cdfbc2 100%);
 }
 body #header::after {
   content: "";
@@ -600,7 +631,7 @@ body #header nav ul li:hover > ul {
   display: inherit;
   opacity: 1;
 }
-body #header nav ul ul {
+body #header nav ul li ul {
   display: none;
   opacity: 0;
   position: absolute;
@@ -608,17 +639,17 @@ body #header nav ul ul {
   transition: opacity ease 0.4s;
   z-index: 101;
 }
-body #header nav ul ul li {
+body #header nav ul li ul li {
   width: 170px;
   float: none;
   display: list-item;
   position: relative;
 }
-body #header nav ul ul li:last-child {
+body #header nav ul li ul li:last-child {
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
 }
-body #header nav ul ul li:last-child::after {
+body #header nav ul li ul li:last-child::after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -630,12 +661,12 @@ body #header nav ul ul li:last-child::after {
   left: 4px; /* one half of the remaining 1% */
   height: 27px;
 }
-body #header nav ul ul li ul {
+body #header nav ul li ul li ul {
   position: relative;
   left: 170px;
   top: -28px;
 }
-body #header a {
+body #header nav a {
   display: block;
   padding: 0 10px;
   font-size: 1rem;
@@ -740,14 +771,14 @@ body #mid {
   position: relative;
   margin-top: 158px;
   width: 100vw;
-  height: calc(100vh - 268px);
+  height: calc(100vh - 270px);
   margin-left: auto;
-  max-width: 1400px;
+  max-width: 1700px;
   margin-right: auto;
 }
 body #main {
   min-height: 440px;
-  height: calc(100% - 1.4rem);
+  height: calc(100vh - 272px);
   margin-top: 0;
   margin-bottom: 0.1rem;
   padding: 0.1rem 1.2%;
@@ -880,7 +911,7 @@ body .ch-module-wrapper .ch-module-heading {
   font-weight: bold;
   color: #167e3a;
   font-size: 1.1rem;
-  background: linear-gradient(to right, #47ee2c 0%, #c9eac9 68%, #fdfdfd 100%);
+  background: linear-gradient(to right, #aceaa1 0%, #daf1da 68%, #fdfdfd 100%);
 }
 body .ch-module-wrapper .ch-module-heading.ch-clickable-heading {
   cursor: pointer;
@@ -898,7 +929,7 @@ body .ch-module-wrapper .ch-module-heading a.btn-add {
   border-radius: 1.1rem;
   border: none;
   cursor: pointer;
-  top: -5px;
+  top: -1px;
   right: 54px;
 }
 body .ch-module-wrapper .ch-module-heading a.btn-add:link,
@@ -936,14 +967,18 @@ body .ch-module-wrapper .ch-module-body table tr td:nth-child(1) {
 body .ch-module-wrapper .ch-module-body table tr td:nth-child(2) {
   padding-left: 0.3rem;
 }
+body .ch-module-wrapper.ch-recent-sermons tr td:nth-child(1),
 body .ch-module-wrapper.ch-recent-sermons tr td:nth-child(2) {
   cursor: pointer;
 }
+body .ch-module-wrapper.ch-recent-sermons tr td:nth-child(1) a:link,
 body .ch-module-wrapper.ch-recent-sermons tr td:nth-child(2) a:link,
+body .ch-module-wrapper.ch-recent-sermons tr td:nth-child(1) a:visited,
 body .ch-module-wrapper.ch-recent-sermons tr td:nth-child(2) a:visited {
   color: #181818;
   text-decoration: none;
 }
+body .ch-module-wrapper.ch-recent-sermons tr td:nth-child(1) a:hover,
 body .ch-module-wrapper.ch-recent-sermons tr td:nth-child(2) a:hover {
   text-decoration: underline;
 }
@@ -1030,7 +1065,7 @@ body #footer nav#footer-menu a {
 }
 body #footer nav#footer-menu a:hover {
   color: #202020;
-  background-color: #73f071;
+  background-color: #b0e3af;
   border-radius: 3px;
 }
 body #footer #copyright {
