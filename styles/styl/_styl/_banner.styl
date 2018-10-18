@@ -14,11 +14,11 @@ banner()
     width: 100%;
     font-weight: bold;
     text-align: center;
-    background: -moz-linear-gradient(270deg, #B8D3F2 0%, #3d5e85 100%); /* ff3.6+ */
-    background: -webkit-linear-gradient(270deg, #B8D3F2 0%, #3D5E85 100%); /* safari5.1+,chrome10+ */
-    background: -ms-linear-gradient(270deg, #B8D3F2 0%, #3D5E85 100%); /* ie10+ */
-    background: linear-gradient(180deg, #B8D3F2 0%, #3D5E85 100%)    //background:  url("/assets/images/ccem_dove.png") no-repeat scroll 0 50% // linear-gradient(180deg, #77AAE0 0%, #4C7BAD 100%) /* w3c */
-
+    //background: -moz-linear-gradient(270deg, #363c0c 0%, #378548 100%); /* ff3.6+ */
+    //background: -webkit-linear-gradient(270deg, #B8D3F2 0%, #3D5E85 100%); /* safari5.1+,chrome10+ */
+    //background: -ms-linear-gradient(270deg, #B8D3F2 0%, #3D5E85 100%); /* ie10+ */
+    //background: linear-gradient(180deg, #363c0c 0%, #9a9c8a 100%)    //background:  url("/assets/images/ccem_dove.png") no-repeat scroll 0 50% // linear-gradient(180deg, #77AAE0 0%, #4C7BAD 100%) /* w3c */
+    background: linear-gradient(180deg, rgba(129,160,204,1) 1%, rgba(153,180,218,1) 19%, rgba(160,186,222,1) 24%, rgba(155,172,199,1) 47%, rgba(125,141,168,1) 67%, rgba(85,100,128,1) 94%, rgba(69,73,87,1) 100%)
     #banner-wrapper
       display: inline-block
       margin-left: auto
@@ -38,11 +38,11 @@ banner()
           font-size: 1rem
           margin-top: 0.2rem
           color: color-dull-white
-      .logo-dove
-        height: 64px
+      .logo
+        margin-top: 4px
         outline: none
         border: none
-        margin-bottom: 0.2rem
+        //margin-bottom: 0.2rem
 
 
     #logo-extension
@@ -55,10 +55,11 @@ banner()
       font-size: 1rem
       text-align right
       color: white
-      background: -moz-linear-gradient(270deg, #c7e6f0 0%, #8BA8CC 20%, #8BA8CC 80%, #005171 100%); /* ff3.6+ */
-      background: -webkit-linear-gradient(270deg, #c7e6f0 0%, #8BA8CC 20%, #8BA8CC 80%, #005171 100%); /* safari5.1+,chrome10+ */
-      background: -ms-linear-gradient(270deg, #c7e6f0 0%, #8BA8CC 20%, #8BA8CC 80%, #005171 100%); /* ie10+ */
-      background: linear-gradient(180deg, #c7e6f0 0%, #8BA8CC 20%, #8BA8CC 80%, #005171 100%); /* w3c */
+      background: transparent
+      //background: -moz-linear-gradient(270deg, #c7e6f0 0%, #8BA8CC 20%, #8BA8CC 80%, #005171 100%); /* ff3.6+ */
+      //background: -webkit-linear-gradient(270deg, #c7e6f0 0%, #8BA8CC 20%, #8BA8CC 80%, #005171 100%); /* safari5.1+,chrome10+ */
+      //background: -ms-linear-gradient(270deg, #c7e6f0 0%, #8BA8CC 20%, #8BA8CC 80%, #005171 100%); /* ie10+ */
+      //background: linear-gradient(180deg, #c7e6f0 0%, #8BA8CC 20%, #8BA8CC 80%, #005171 100%); /* w3c */
       &::after
         content: "";
         z-index: -1;
