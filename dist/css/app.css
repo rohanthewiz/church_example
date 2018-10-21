@@ -489,10 +489,22 @@ body #banner {
   width: 100%;
   font-weight: bold;
   text-align: center;
-  background: linear-gradient(180deg, #81a0cc 1%, #99b4da 19%, #a0bade 24%, #9bacc7 47%, #7d8da8 67%, #556480 94%, #454957 100%);
+  background: linear-gradient(180deg, #94b3e0 1%, #99b5de 19%, #9bb6de 24%, #92a8d1 47%, #7e93b9 67%, #657799 94%, #676d82 100%);
 }
 body #banner.theme-cobalt {
   color: #fafaf7;
+}
+body #banner::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  left: 1px /* one half of the remaining npx */;
+  bottom: 1px;
+  width: 100%;
+  height: 2px;
+  -webkit-box-shadow: 0px 3px 4px rgba(91,105,113,0.8);
+  -moz-box-shadow: 0px 3px 4px rgba(91,105,113,0.8);
+  box-shadow: 0px 3px 4px rgba(91,105,113,0.8);
 }
 body #banner #banner-wrapper {
   display: inline-block;
@@ -541,9 +553,9 @@ body #banner #logo-extension::after {
   bottom: 1px;
   width: 100%;
   height: 2px;
-  -webkit-box-shadow: 0 1px 2px rgba(91,105,113,0.7);
-  -moz-box-shadow: 0 1px 2px rgba(91,105,113,0.7);
-  box-shadow: 0 1px 2px rgba(91,105,113,0.7);
+  -webkit-box-shadow: 0px 3px 4px rgba(91,105,113,0.8);
+  -moz-box-shadow: 0px 3px 4px rgba(91,105,113,0.8);
+  box-shadow: 0px 3px 4px rgba(91,105,113,0.8);
 }
 body #banner #logo-extension .fb-icon {
   height: 1.1rem;
@@ -570,17 +582,17 @@ body #header {
   width: 100%;
 }
 body #header.theme-cobalt nav {
-  background: #98a1b3;
+  background: #9eaac2;
 }
 body #header.theme-cobalt nav ul li {
-  background-color: #98a1b3;
+  background-color: #9eaac2;
 }
 body #header.theme-cobalt nav a {
   color: #f2f3ec;
 }
 body #header.theme-cobalt nav a:hover {
   color: #202020;
-  background: #edeee4;
+  background: #e1dfc1;
 }
 body #header::after {
   content: "";
@@ -901,10 +913,11 @@ body .ch-module-wrapper:after {
 body .ch-module-wrapper .ch-module-heading {
   position: relative;
   padding: 0.3rem 0.4rem;
+  border-radius: 0.1rem;
   font-weight: bold;
-  color: #eae9f0;
+  color: #67696f;
   font-size: 1.1rem;
-  background: linear-gradient(to right, #abaac1 0%, #dadef1 68%, #fdfdfd 100%);
+  background: linear-gradient(to right, #e3e6b5 0%, #ebecd4 68%, #fdfdfd 100%);
 }
 body .ch-module-wrapper .ch-module-heading.ch-clickable-heading {
   cursor: pointer;
@@ -1058,7 +1071,7 @@ body #footer nav#footer-menu a {
 }
 body #footer nav#footer-menu a:hover {
   color: #202020;
-  background-color: #b4b481;
+  background-color: #e1dfc1;
   border-radius: 3px;
 }
 body #footer #copyright {
