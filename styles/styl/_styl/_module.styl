@@ -91,3 +91,49 @@ module()
       &.center
         margin-left:auto
         margin-right:auto
+
+    &.ch-easy-tabs
+      .eztabs {
+        width: 100%;
+        height: 31px;
+        background-color: #e3dfdf;
+        padding-left: 0
+        margin-bottom: 0.1rem
+        margin-top: 0.1rem
+
+      }
+      .eztabs li {
+        float:  left;
+        margin: 0 4px 0 0;
+        overflow: hidden;
+        background-color: #e3dfdf;
+        display: inline-block
+        height: 2rem
+        line-height: 2rem
+
+      }
+      .eztabs li a {
+        display: block;
+        color: #101010;
+        text-decoration: none;
+        font: bold 11px/11px 'Arial';
+        text-transform: uppercase;
+        padding: 0 0.4rem;
+        border-right: 1px solid #fff;
+      }
+      .eztabs > li > a > p {
+        margin: 0
+        line-height: 2rem
+      }
+      .eztabs li a:hover {
+        background-color: #00b3ff;
+
+      }
+      .eztabs li.active a {
+        color: #0b4a1a;
+        background-color: lighten(#e3dfdf, 42%)
+      }
+      .easytabs-tab-content {
+        margin-top: -15px
+        background-color: lighten(#e3dfdf, 42%)
+      }
