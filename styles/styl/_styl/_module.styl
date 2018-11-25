@@ -3,6 +3,11 @@
 module()
   .ch-module-wrapper
     clearfix()
+    easy_tabs()
+    full_calendar()
+    carousel()
+    recent_sermons()
+
     margin-bottom: 0.4rem
     .ch-module-heading
       position: relative
@@ -46,97 +51,3 @@ module()
               border-bottom: 1px solid #bcebc9  // green underline
             &:nth-child(2)
               padding-left: 0.3rem
-    &.ch-recent-sermons
-      tr
-        td:nth-child(1)
-        //padding-right: 0.1rem
-        //background-color: #a9d3bf
-        td:nth-child(2)
-          cursor: pointer
-          a:link, a:visited
-            color: theme-cobalt-module-a-color
-            text-decoration none
-          a:hover
-            text-decoration underline
-
-    &.ch-carousel
-      width: calc(100% - 2.4rem);
-      background-color: theme-cobalt-carousel-bgcolor
-      border-radius: 0.3rem;
-      padding-left: 0.4rem;
-      padding-bottom: 0.6rem;
-      margin-bottom: 0.4rem
-      .slick-prev.slick-arrow, .slick-next.slick-arrow
-        display: none
-        opacity 0
-        width: 0
-      img
-        border-radius:0.3rem
-
-    &.ch-full_calendar
-      //max-height: 84%;
-      position: relative;
-      //overflow-y: auto;
-      //clear: both;
-      width: 92%;
-      margin-top: 0.9rem;
-      margin-left: auto;
-      margin-right: auto;
-      padding-top: 1rem;
-      padding-bottom: 0.8rem
-    .article-title
-      color: theme-cobalt-article-heading-color
-    img
-      border-radius:0.2rem
-      &.center
-        margin-left:auto
-        margin-right:auto
-
-    &.ch-easy-tabs
-      .eztabs {
-        width: 100%;
-        height: 2rem;
-        background-color: #e3dfdf;
-        padding-left: 0
-        margin-bottom: 0.1rem
-        margin-top: 0.1rem
-
-      }
-      .eztabs li {
-        float:  left;
-        margin: 0 1px;
-        padding: 0px
-        overflow: hidden;
-        background-color: #e3dfdf;
-        display: inline-block
-        height: 2rem
-        line-height: 2rem
-
-      }
-      .eztabs li a {
-        display: inline-block;
-        color: #101010;
-        text-decoration: none;
-        font: bold 11px/11px 'Arial';
-        text-transform: uppercase;
-        padding: 0
-        border-right: 1px solid #fff;
-      }
-      .eztabs > li > a > p {
-        margin: 0
-        line-height: 2rem
-        padding: 0 0.8em
-      }
-      .eztabs li a:hover {
-        background-color: #00b3ff;
-
-      }
-      .eztabs li.active a {
-        color: #0b4a1a;
-        background-color: lighten(#e3dfdf, 42%)
-      }
-      .easytabs-tab-content {
-        margin-top: -1px
-        padding: 0.4em
-        background-color: lighten(#e3dfdf, 42%)
-      }

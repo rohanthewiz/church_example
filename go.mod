@@ -5,7 +5,7 @@ require (
 	github.com/denisenkom/go-mssqldb v0.0.0-20181014144952-4e0d7dc8888f // indirect
 	github.com/go-redis/redis v6.14.2+incompatible // indirect
 	github.com/jlaffaye/ftp v0.0.0-20181101112434-47f21d10f0ee // indirect
-	github.com/rohanthewiz/church v0.1.1-0.20181116195424-8648c8de6d88
+	github.com/rohanthewiz/church v0.1.2
 	github.com/rohanthewiz/logger v1.0.1
 	github.com/rohanthewiz/roredis v0.0.0-20180930023327-1f6380dfc68e
 	github.com/sirupsen/logrus v1.2.0

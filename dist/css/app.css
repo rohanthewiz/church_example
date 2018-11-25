@@ -910,6 +910,101 @@ body .ch-module-wrapper:before {
 body .ch-module-wrapper:after {
   clear: both;
 }
+body .ch-module-wrapper.ch-easy-tabs .eztabs {
+  width: 100%;
+  height: 2rem;
+  background-color: #e3dfdf;
+  padding-left: 0;
+  margin-bottom: 0.1rem;
+  margin-top: 0.1rem;
+}
+body .ch-module-wrapper.ch-easy-tabs .eztabs li {
+  float: left;
+  margin: 0 1px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #e3dfdf;
+  display: inline-block;
+  height: 2rem;
+  line-height: 2rem;
+}
+body .ch-module-wrapper.ch-easy-tabs .eztabs li a {
+  display: inline-block;
+  color: #101010;
+  text-decoration: none;
+  font: bold 11px/11px 'Arial';
+  text-transform: uppercase;
+  padding: 0;
+  border-right: 1px solid #fff;
+}
+body .ch-module-wrapper.ch-easy-tabs .eztabs > li > a > p {
+  margin: 0;
+  line-height: 2rem;
+  padding: 0 0.8em;
+}
+body .ch-module-wrapper.ch-easy-tabs .eztabs li a:hover {
+  background-color: #00b3ff;
+}
+body .ch-module-wrapper.ch-easy-tabs .eztabs li.active a {
+  color: #0b4a1a;
+  background-color: #efecec;
+}
+body .ch-module-wrapper.ch-easy-tabs .easytabs-tab-content {
+  margin-top: -1px;
+  padding: 0.4em;
+  background-color: #efecec;
+}
+body .ch-module-wrapper.ch-full_calendar {
+  position: relative;
+  width: 92%;
+  margin-top: 0.9rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1rem;
+  padding-bottom: 0.8rem;
+}
+body .ch-module-wrapper .article-title {
+  color: #1c5f68;
+}
+body .ch-module-wrapper img {
+  border-radius: 0.2rem;
+}
+body .ch-module-wrapper img.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+body .ch-module-wrapper.ch-carousel {
+  width: calc(100% - 2.4rem);
+  background-color: #fcfafa;
+  border-radius: 0.3rem;
+  padding-left: 0.4rem;
+  padding-bottom: 0.6rem;
+  margin-bottom: 0.4rem;
+}
+body .ch-module-wrapper.ch-carousel .slick-prev.slick-arrow,
+body .ch-module-wrapper.ch-carousel .slick-next.slick-arrow {
+  display: none;
+  opacity: 0;
+  width: 0;
+}
+body .ch-module-wrapper.ch-carousel img {
+  border-radius: 0.3rem;
+}
+body .ch-module-wrapper.ch-recent-sermons tr td:nth-child(1),
+body .ch-module-wrapper.ch-recent-sermons tr td:nth-child(2) {
+  cursor: pointer;
+}
+body .ch-module-wrapper.ch-recent-sermons tr td:nth-child(1) a:link,
+body .ch-module-wrapper.ch-recent-sermons tr td:nth-child(2) a:link,
+body .ch-module-wrapper.ch-recent-sermons tr td:nth-child(1) a:visited,
+body .ch-module-wrapper.ch-recent-sermons tr td:nth-child(2) a:visited {
+  color: #181818;
+  text-decoration: none;
+}
+body .ch-module-wrapper.ch-recent-sermons tr td:nth-child(1) a:hover,
+body .ch-module-wrapper.ch-recent-sermons tr td:nth-child(2) a:hover {
+  text-decoration: underline;
+}
 body .ch-module-wrapper .ch-module-heading {
   position: relative;
   padding: 0.3rem 0.4rem;
@@ -972,101 +1067,6 @@ body .ch-module-wrapper .ch-module-body table tr td:nth-child(1) {
 }
 body .ch-module-wrapper .ch-module-body table tr td:nth-child(2) {
   padding-left: 0.3rem;
-}
-body .ch-module-wrapper.ch-recent-sermons tr td:nth-child(1),
-body .ch-module-wrapper.ch-recent-sermons tr td:nth-child(2) {
-  cursor: pointer;
-}
-body .ch-module-wrapper.ch-recent-sermons tr td:nth-child(1) a:link,
-body .ch-module-wrapper.ch-recent-sermons tr td:nth-child(2) a:link,
-body .ch-module-wrapper.ch-recent-sermons tr td:nth-child(1) a:visited,
-body .ch-module-wrapper.ch-recent-sermons tr td:nth-child(2) a:visited {
-  color: #181818;
-  text-decoration: none;
-}
-body .ch-module-wrapper.ch-recent-sermons tr td:nth-child(1) a:hover,
-body .ch-module-wrapper.ch-recent-sermons tr td:nth-child(2) a:hover {
-  text-decoration: underline;
-}
-body .ch-module-wrapper.ch-carousel {
-  width: calc(100% - 2.4rem);
-  background-color: #fcfafa;
-  border-radius: 0.3rem;
-  padding-left: 0.4rem;
-  padding-bottom: 0.6rem;
-  margin-bottom: 0.4rem;
-}
-body .ch-module-wrapper.ch-carousel .slick-prev.slick-arrow,
-body .ch-module-wrapper.ch-carousel .slick-next.slick-arrow {
-  display: none;
-  opacity: 0;
-  width: 0;
-}
-body .ch-module-wrapper.ch-carousel img {
-  border-radius: 0.3rem;
-}
-body .ch-module-wrapper.ch-full_calendar {
-  position: relative;
-  width: 92%;
-  margin-top: 0.9rem;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 1rem;
-  padding-bottom: 0.8rem;
-}
-body .ch-module-wrapper .article-title {
-  color: #1c5f68;
-}
-body .ch-module-wrapper img {
-  border-radius: 0.2rem;
-}
-body .ch-module-wrapper img.center {
-  margin-left: auto;
-  margin-right: auto;
-}
-body .ch-module-wrapper.ch-easy-tabs .eztabs {
-  width: 100%;
-  height: 2rem;
-  background-color: #e3dfdf;
-  padding-left: 0;
-  margin-bottom: 0.1rem;
-  margin-top: 0.1rem;
-}
-body .ch-module-wrapper.ch-easy-tabs .eztabs li {
-  float: left;
-  margin: 0 1px;
-  padding: 0px;
-  overflow: hidden;
-  background-color: #e3dfdf;
-  display: inline-block;
-  height: 2rem;
-  line-height: 2rem;
-}
-body .ch-module-wrapper.ch-easy-tabs .eztabs li a {
-  display: inline-block;
-  color: #101010;
-  text-decoration: none;
-  font: bold 11px/11px 'Arial';
-  text-transform: uppercase;
-  padding: 0;
-  border-right: 1px solid #fff;
-}
-body .ch-module-wrapper.ch-easy-tabs .eztabs > li > a > p {
-  margin: 0;
-  line-height: 2rem;
-  padding: 0 0.8em;
-}
-body .ch-module-wrapper.ch-easy-tabs .eztabs li a:hover {
-  background-color: #00b3ff;
-}
-body .ch-module-wrapper.ch-easy-tabs .eztabs li.active a {
-  color: #0b4a1a;
-  background-color: #efecec;
-}
-body .ch-module-wrapper.ch-easy-tabs .easytabs-tab-content {
-  margin-top: -1px;
-  padding: 0.4em;
-  background-color: #efecec;
 }
 body img.note-float-left {
   margin-right: 1rem;

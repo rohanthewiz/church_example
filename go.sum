@@ -70,6 +70,12 @@ github.com/rohanthewiz/church v0.1.1-0.20181105060531-4f1af36ccb96 h1:tg6E0+Mzu6
 github.com/rohanthewiz/church v0.1.1-0.20181105060531-4f1af36ccb96/go.mod h1:IA8HBw/zYPFhB5kwkj1B3nW9/GVozxFEEE5NPg83syA=
 github.com/rohanthewiz/church v0.1.1-0.20181116195424-8648c8de6d88 h1:qPo+Pehqhypo74/TdKJQoJtvCFvydoBMytBSjFFC894=
 github.com/rohanthewiz/church v0.1.1-0.20181116195424-8648c8de6d88/go.mod h1:IA8HBw/zYPFhB5kwkj1B3nW9/GVozxFEEE5NPg83syA=
+github.com/rohanthewiz/church v0.1.1-0.20181124213943-88f1bb5daa06 h1:y5eyaIiEkR4bi5G9o/ptfB6qAsk9qfYEWHfgJSetreE=
+github.com/rohanthewiz/church v0.1.1-0.20181124213943-88f1bb5daa06/go.mod h1:IA8HBw/zYPFhB5kwkj1B3nW9/GVozxFEEE5NPg83syA=
+github.com/rohanthewiz/church v0.1.1-0.20181124214629-96b7bc0f9f45 h1:XCtvTgcKNM9MtIrqgH40DhaLIDfGTM5b9PkwZYYXQUc=
+github.com/rohanthewiz/church v0.1.1-0.20181124214629-96b7bc0f9f45/go.mod h1:IA8HBw/zYPFhB5kwkj1B3nW9/GVozxFEEE5NPg83syA=
+github.com/rohanthewiz/church v0.1.2 h1:6pgXK+HVTFgbbIDuITZDW75YAgZn1pgXYhd20eMULs4=
+github.com/rohanthewiz/church v0.1.2/go.mod h1:IA8HBw/zYPFhB5kwkj1B3nW9/GVozxFEEE5NPg83syA=
 github.com/rohanthewiz/element v0.1.2 h1:q4CkTCi5yoMW8H9p9bn/zPt4Hk0OpMm7OfIE7BzyfuI=
 github.com/rohanthewiz/element v0.1.2/go.mod h1:VNgNUGzMSA2rEot4fXM2deHofTXnF8dt5gV2KIQ+0tA=
 github.com/rohanthewiz/logger v1.0.1 h1:mEULiVZw9sdtsBrIVFGxP/dfGl1N1Ii+peUldzLNV54=
